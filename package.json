@@ -8,10 +8,11 @@
     "start": "nuxt start",
     "export": "nuxt export",
     "serve": "nuxt serve",
-    "prerender": "nuxt build --fail-on-error && nuxt export --fail-on-error"
+    "prerender": "nuxt build --fail-on-error && nuxt export --fail-on-error",
+    "generate": "nuxt generate --fail-on-error"
   },
   "dependencies": {
-    "nuxt": "^2.13.0"
+    "nuxt": "^2.14.0"
   },
   "devDependencies": {}
 }
