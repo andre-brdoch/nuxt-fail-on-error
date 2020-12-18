@@ -3,6 +3,15 @@ export default {
 
   target: "static",
 
+  hooks: {
+    "vue-renderer:ssr:context"(context) {
+      const fetchError = context.nuxt.fetch.find(data => data._error);
+      if (fetchError) {
+        context.nuxt.error = fetchError._error;
+      }
+    }
+  },
+
   head: {
     title: process.env.npm_package_name || "",
     meta: [

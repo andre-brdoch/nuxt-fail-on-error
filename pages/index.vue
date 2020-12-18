@@ -6,17 +6,17 @@
 
 <script>
 export default {
-  async asyncData() {
-    const arr = [1, 2, 3];
-    // sort is not defined:
-    const sorted = sort(arr);
-    return { sorted };
-  }
+  // async asyncData() {
+  //   const arr = [1, 2, 3];
+  //   // sort is not defined:
+  //   const sorted = sort(arr);
+  //   return { sorted };
+  // }
 
-  /*  fetch() {
+  fetch() {
     const arr = [1, 2, 3];
     // sort is not defined:
     this.sorted = sort(arr);
-  }*/
+  }
 };
 </script>
